@@ -13,10 +13,6 @@ body {
     align-items: center;
     overflow: hidden;
 }
-h1{
-    color: #fff;
-    font-family: Poppins;
-}
 
 nav {
     position: absolute;
@@ -28,7 +24,11 @@ nav {
     font-size: 20px;
     padding: 20px;
 }
-
+h1{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+}
 nav span {
     width: 50%;
     display: flex;
