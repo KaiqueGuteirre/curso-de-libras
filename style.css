@@ -10,18 +10,38 @@ body {
     font-size: 12px;
 }
 
-a {
+nav a {
     left: 30px;
-    text-decoration: none;
     color: #eee;
     font-size: 18px;
+    margin: 0 5%;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+nav a:active {
+    color: #fff;
+}
+
+button a {
+    left: 30px;
+    color: #eee;
+    font-size: 18px;
+    margin: 0 5%;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
+    padding: 5PX;
     width: 400px;
     max-width: 90%;
     margin: auto;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     position: relative;
@@ -32,16 +52,15 @@ header {
     transition: transform .6s ease, height 2.s ease-in-out, opacity .5s ease-in-out;
 }
 
-header a {
-    margin-left: 50px;
-}
-p{
+p {
     font-size: 15px;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -50,9 +69,9 @@ h3{
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    margin-top: -50px;
+    margin-top: -110px;
     position: relative;
-    
+
 }
 
 .carousel .list .item {
@@ -78,10 +97,11 @@ h3{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
- .content2 {
+
+.content2 {
     position: absolute;
     top: 100%;
-    width: 1200px;
+    width: 100vw;
     max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
@@ -90,6 +110,46 @@ h3{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
+
+.content2 .duração,
+.content2 .modalidade,
+.content2 .certificado {
+    display: inline-block;
+    background: rgba(0, 0, 0, .40);
+    margin-bottom: 15px;
+    width: 250px;
+    height: 100px;
+    margin-right: 5%;
+    border-radius: 20px;
+    position: relative;
+    left: 200px;
+}
+
+.content2 ion-icon {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 32px;
+}
+.content2 .duração h3,
+.content2 .modalidade h3,
+.content2 .certificado h3 {
+    position: relative;
+    left: 25%;
+}
+.content2 .duração p,
+.content2 .modalidade p,
+.content2 .certificado p {
+    position: relative;
+    left: 25%;
+}
+.icons .icon{
+    position: absolute;
+    width: 200px;
+    height: auto;
+}
+
+
 
 .author {
     font-weight: bold;
@@ -106,7 +166,7 @@ h3{
 
 .topic {
     color: crimson;
-    
+
 }
 
 .carousel .list .item .content .buttons {
@@ -142,10 +202,12 @@ h3{
     cursor: pointer;
     color: #000;
 }
-.carousel .list .item .content a:hover{
+
+.carousel .list .item .content a:hover {
     opacity: .8;
 }
-.carousel .list .item .content a:active{
+
+.carousel .list .item .content a:active {
     opacity: .5;
 }
 
@@ -154,6 +216,7 @@ h3{
     color: #eee;
     border: 1PX solid #eee;
 }
+
 /* login */
 
 nav {
@@ -166,11 +229,13 @@ nav {
     font-size: 20px;
     padding: 20px;
 }
-nav h1{
+
+nav h1 {
     color: #fff;
     font-family: Poppins;
     font-size: 20px;
 }
+
 nav span {
     width: 50%;
     display: flex;
@@ -225,6 +290,7 @@ nav span a:hover::before {
     overflow: hidden;
     transition: transform .6s ease, height 2.s ease-in-out, opacity .5s ease-in-out;
 }
+
 /* .close-icon{
     position: absolute;
     right: 0px;
@@ -234,7 +300,7 @@ nav span a:hover::before {
     font-size: 40px;
     z-index: 1;
 } */
-.form-box form{
+.form-box form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,10 +310,12 @@ nav span a:hover::before {
     position: absolute;
     transition: all .5s ease;
 }
-.register-form{
+
+.register-form {
     transform: translateX(-100%);
 }
-.input-box{
+
+.input-box {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -255,10 +323,12 @@ nav span a:hover::before {
     border-bottom: 2px solid #fff;
     margin: 40px 0px;
 }
-.register-form .form-box{
+
+.register-form .form-box {
     margin: 30px 0px;
 }
-.input-box input{
+
+.input-box input {
     width: 90%;
     position: absolute;
     color: #fff;
@@ -267,24 +337,29 @@ nav span a:hover::before {
     background: none;
     outline: none;
 }
-.input-box label{
+
+.input-box label {
     transition: .4s;
 }
-.input-box input:focus ~ label,
-.input-box input:valid ~ label{
-transform: translateY(-25px);
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    transform: translateY(-25px);
 }
-.input-box ion-icon{
+
+.input-box ion-icon {
     font-size: 25px;
 }
-.check-box{
+
+.check-box {
     width: 80%;
     display: flex;
     justify-items: center;
     align-items: center;
     font-size: 20px;
 }
-.submit-btn{
+
+.submit-btn {
     width: 80%;
     height: 30px;
     cursor: pointer;
@@ -292,36 +367,52 @@ transform: translateY(-25px);
     border: none;
     margin: 20px 0px;
 }
+
 .form-box h5,
 .check-box label,
-.check-box input{
-cursor: pointer;
+.check-box input {
+    cursor: pointer;
 }
-.change-form{
+
+.change-form {
     height: 500px;
 }
-.change-form .login-form{
-    transform:  translateX(100%);
+
+.change-form .login-form {
+    transform: translateX(100%);
 }
-.change-form .register-form{
+
+.change-form .register-form {
     transform: translateX(0%);
 }
+
 @media screen and (max-width: 1430px) {
-     .carousel .list .item .content {
+    .carousel .list .item .content {
         padding-right: 0;
     }
-    .content2{
+
+    .content2 {
         top: 900px;
-        }
     }
-    
-    @media screen and (max-width: 900px) {
-        .content2{
-            top: 1000px;
-            }
-        }
-        @media screen and (max-width: 600px) {
-            .content2{
-                top: 1350px;
-                }
-            }
+}
+
+@media screen and (max-width: 900px) {
+    .content2 {
+        top: 1000px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content2 {
+        top: 1150px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content2 {
+        top: 1300px;
+        left: 100px;
+    }
+}
