@@ -72,35 +72,37 @@
                 body {
                     box-sizing: border-box;
                     font-family: poppins;
-                    background-color: #000;
                     color: #eee;
                     margin: 0;
                     font-size: 12px;
-                    background-color: #4c386b;
+                    background-color: #443765;
                 }
 
                 a {
+                    left: 30px;
                     text-decoration: none;
                     color: #eee;
                     font-size: 18px;
                 }
 
                 header {
-                    width: 1140px;
-                    max-width: 80%;
+                    width: 400px;
+                    max-width: 90%;
                     margin: auto;
                     height: 50px;
                     display: flex;
                     align-items: center;
                     position: relative;
                     z-index: 100;
-                    /* background: rgb(250, 108, 136); */
-                   
-                    
+                    border-radius: 15px;
+                    backdrop-filter: blur(50px);
+                    border-radius: 16px;
+                    transition: transform .6s ease, height 2.s ease-in-out, opacity .5s ease-in-out;
+                    z-index: 101;
                 }
 
                 header a {
-                    margin-right: 40px;
+                    margin-left: 50px;
                 }
 
                 p {
@@ -164,10 +166,12 @@
                     top: -70px;
                     left: 45%;
                 }
-                section a:hover{
+
+                section a:hover {
                     opacity: .8;
                 }
-                section a:active{
+
+                section a:active {
                     opacity: .5;
                 }
 
@@ -237,10 +241,11 @@
                         top: -40px;
                         left: 30%;
                     }
+
                     .carousel {
-                    overflow: scroll;
-                    
-                }
+                        overflow: scroll;
+
+                    }
                 }
 
                 .carousel .list .item .content .title {
