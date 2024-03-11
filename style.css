@@ -44,6 +44,13 @@ header a {
     cursor: pointer;
     display: none;
 }
+<<<<<<< HEAD
+=======
+.toggle-btn:hover{
+    color: orange;
+
+}
+>>>>>>> develop
 
 .container {
     width: 100vw;
@@ -179,7 +186,11 @@ h2 {
     overflow: hidden;
     display: none;
     transition: heigt .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+<<<<<<< HEAD
     z-index: ;
+=======
+    z-index: 1;
+>>>>>>> develop
 }
 .dropdown-menu.open{
     height: 160px;
