@@ -1,3 +1,18 @@
+//open
+//open
+const toggleBtn = document.querySelector(".toggle-btn")
+const toggleBtnIcon = document.querySelector(".toggle-btn i")
+const dropDwnMenu = document.querySelector(".dropdown-menu")
+
+toggleBtn.onclick = function () {
+    dropDwnMenu.classList.toggle("open")
+    const isOpen = dropDwnMenu.classList.contains("open")
+
+    toggleBtnIcon.classList = isOpen
+    ? "fa-solid fa-xmark"
+    : "fa-solid fa-bars"
+}
+
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 let carouselDom = document.querySelector('.carousel');
@@ -65,3 +80,4 @@ close_btn.addEventListener("click",()=>{
 login_nav_btn.addEventListener("click",()=>{
     document.querySelector(".form-box").classList.remove("close-form")
 })
+
