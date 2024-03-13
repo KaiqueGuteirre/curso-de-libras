@@ -44,13 +44,11 @@ header a {
     cursor: pointer;
     display: none;
 }
-<<<<<<< HEAD
-=======
-.toggle-btn:hover{
+
+.toggle-btn:hover {
     color: orange;
 
 }
->>>>>>> develop
 
 .container {
     width: 100vw;
@@ -82,39 +80,36 @@ h2 {
 .content-text h1 {
     position: relative;
     margin-top: 50px;
-    font-size: max(25px, 3vw);
+    font-size: max(38px, 3vw);
 }
 
 .content-text h2 {
-    font-size: max(20px, 2vw);
+    font-size: max(25px, 2vw);
 }
 
 .content-box {
     margin-top: 30px;
     width: 100%;
-    height: 60%;
-    background-color: rgb(255, 255, 255, 0.2);
-    padding: 10px;
+    /* height: 500px; */
+    /* background-color: rgb(255, 255, 255, 0.2); */
     border-radius: 15px;
 }
 
 .img-libras {
-    display: inline-block;
+    width: 500px;
     position: relative;
-    width: 260px;
-    max-width: 80%;
-    height: auto;
-    margin-left: 80px;
-    top: 17px;
+    top: -160px;
 }
 
-.content-info,
 .info-modality,
-.info-certificate {
+.info-certificate,
+.info-hours {
     display: inline-block;
+    position: relative;
     margin-top: 10px;
-    width: 200px;
-    height: 70px;
+    margin-right: 50px;
+    width: 250px;
+    height: 110px;
     background-color: rgba(20, 140, 219, 0.6);
     color: #fff;
     border-radius: 10px;
@@ -122,23 +117,23 @@ h2 {
 
 .content-info h3 {
     position: relative;
-    left: 60px;
-    top: -15px;
+    left: 70px;
+    top: -30px;
+    font-size: 25px;
 }
 
 .content-info p {
     position: relative;
-    left: 60px;
-    font-size: 15px;
-    top: -15px;
+    left: 70px;
+    font-size: 20px;
+    top: -55px;
 }
 
 .content-info img {
-    width: 25px;
+    width: 40px;
     position: relative;
-    left: 20px;
-    top: 12px;
-    display: flex;
+    left: 15px;
+    top: 20px;
 
 }
 
@@ -148,7 +143,7 @@ h2 {
     width: 150px;
     height: 40px;
     background-color: rgba(20, 140, 219);
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -179,20 +174,17 @@ h2 {
     justify-content: center;
     flex-direction: column;
     background-color: rgba(20, 140, 219, 0.2);
-    backdrop-filter: blur(15px);
-    width: 200px;
+    backdrop-filter: blur(8px);
+    width: 150px;
     height: 0;
     border-radius: 15px;
     overflow: hidden;
     display: none;
     transition: heigt .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-<<<<<<< HEAD
-    z-index: ;
-=======
     z-index: 1;
->>>>>>> develop
 }
-.dropdown-menu.open{
+
+.dropdown-menu.open {
     height: 160px;
 }
 
@@ -200,39 +192,53 @@ h2 {
     padding: 0.5rem;
     display: block;
     margin: auto;
-    top: 20px;
-    font-size: 18px;
+    top: 15px;
+    font-size: 20px;
     font-weight: 700;
     align-items: center;
     position: relative;
-    right: 10px;
+    right: 25px;
     color: #fff;
+    -webkit-text-stroke: 1px black;
 }
 
+
+
 @media (max-width: 600px) {
-    .img-libras {
-        display: none;
-    }
+   
 
     .content {
         width: 80%;
     }
 
     .content-text p {
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .links {
         display: none;
     }
-    .toggle-btn{
+
+    .toggle-btn {
         position: absolute;
         right: 2rem;
         top: 20px;
         display: block;
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         display: block;
+    }
+
+    .info-modality,
+    .info-certificate,
+    .info-hours {
+        left: 0px;
+    }
+    @media (max-width: 1300px){
+        h1{
+            display: block;
+        }
     }
 
 }

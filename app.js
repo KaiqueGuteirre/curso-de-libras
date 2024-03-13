@@ -1,5 +1,4 @@
 //open
-//open
 const toggleBtn = document.querySelector(".toggle-btn")
 const toggleBtnIcon = document.querySelector(".toggle-btn i")
 const dropDwnMenu = document.querySelector(".dropdown-menu")
