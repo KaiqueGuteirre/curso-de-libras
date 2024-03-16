@@ -202,6 +202,43 @@ h2 {
     -webkit-text-stroke: 1px black;
 }
 
+/* >>>>>>>>footer<<<<<< */
+footer{
+    background-color: #58b7f7;
+}
+footer .container-footer{
+    display: flex;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    padding: 15px 0;
+}
+footer .container-footer ul{
+    width: 25%;
+    margin-right: 10px;
+}
+footer .container-footer h5{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: max(20px, 0.8vw)
+}
+footer .container-footer .redes-sociais img{
+    margin-right: 10px;
+}
+footer .container-footer ul > p{
+    margin-bottom: 40px;
+    width: 80%;
+}
+footer .container-footer li{
+    margin: 10px 0;
+}
+
+footer .container-footer a{
+    color: #fff;
+    text-decoration: nome;
+}
+/* >>>>>>>>end footer<<<<<< */
+
 
 
 @media (max-width: 600px) {
@@ -239,6 +276,19 @@ h2 {
         h1{
             display: block;
         }
+
+        footer .container-footer{
+            flex-direction: column;
+        }
+        footer .container-footer ul{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        footer .container-footer{
+            width: 80%;
+        }
     }
+    
 
 }
