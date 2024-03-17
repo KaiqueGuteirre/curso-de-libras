@@ -16,13 +16,12 @@ body {
 
 header {
     width: 50%;
-    display: block;
     margin: auto;
     padding: 20px 0 0 0;
 }
 
 header a:hover {
-    color: orange;
+    opacity: 0.8;
 }
 
 header a:active {
@@ -50,19 +49,23 @@ header a {
 
 }
 
+.active {
+    color: orange;
+}
+
 .container {
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .content {
-    display: block;
     margin: auto;
     width: 50%;
 }
 
 .content-text p {
-    display: block;
     margin: auto;
     font-size: max(15px, 1.3vw);
     color: #fff;
@@ -71,7 +74,6 @@ header a {
 
 .content-text h1,
 h2 {
-    display: block;
     margin: auto;
     color: #58b7f7;
     -webkit-text-stroke: 1px black;
@@ -87,19 +89,18 @@ h2 {
     font-size: max(25px, 2vw);
 }
 
-.content-box {
+.content-box,
+.content-info-prof,
+.content-info-prof-req {
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
-    /* height: 500px; */
-    /* background-color: rgb(255, 255, 255, 0.2); */
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.2);
     border-radius: 15px;
+    
 }
 
-.img-libras {
-    width: 500px;
-    position: relative;
-    top: -160px;
-}
 
 .info-modality,
 .info-certificate,
@@ -107,35 +108,44 @@ h2 {
     display: inline-block;
     position: relative;
     margin-top: 10px;
-    margin-right: 50px;
-    width: 250px;
-    height: 110px;
+    margin-right: 20px;
+    width: 210px;
+    height: 90px;
     background-color: rgba(20, 140, 219, 0.6);
     color: #fff;
+    left: 18px;
     border-radius: 10px;
 }
 
 .content-info h3 {
     position: relative;
-    left: 70px;
+    left: 65px;
     top: -30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .content-info p {
     position: relative;
-    left: 70px;
-    font-size: 20px;
+    left: 65px;
+    font-size: 18px;
     top: -55px;
 }
 
 .content-info img {
-    width: 40px;
+    width: 35px;
     position: relative;
-    left: 15px;
-    top: 20px;
+    left: 10px;
+    top: 10px;
 
 }
+
+.content-info .img-libras {
+    width:220px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
 
 .content-bt {
     position: relative;
@@ -166,6 +176,52 @@ h2 {
 
 }
 
+
+
+section .prof-dry {
+    display: inline-block;
+    width: 100%;
+
+}
+
+section .prof-dry p,
+.prof-raq p {
+    display: inline-block;
+    width: 50%;
+    padding: 20px 20px;
+    margin-left: 20px;
+
+}
+
+section .prof-dry h4,
+.prof-raq h4 {
+    display: inline-block;
+    width: 70%;
+    padding: 20px 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+
+}
+
+section .prof-dry img {
+    display: inline-block;
+    width: 25%;
+    min-width: 150px;
+    position: relative;
+    top: 30px;
+    margin-left: 20px;
+}
+
+section .prof-raq img{
+    width: 20%;
+    min-width: 120px;
+    position: relative;
+    top: 30px;
+    margin-left: 20px;
+}
 .dropdown-menu {
     position: absolute;
     right: 2rem;
@@ -202,47 +258,133 @@ h2 {
     -webkit-text-stroke: 1px black;
 }
 
-/* >>>>>>>>footer<<<<<< */
-footer{
-    background-color: #58b7f7;
+/* >>>>>>>>info.html<<<<<< */
+.container-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-footer .container-footer{
+
+.box-info {
+    width: 50%;
+    background-color: rgba(20, 140, 219, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.basic {
+    width: 80%;
+    padding-left: 50px;
+}
+
+.basic p {
+    font-size: max(15px, 1vw);
+    color: #fff;
+    margin: 10px 0;
+}
+
+.basic h2 {
+    color: #fff;
+    font-size: max(30px, 1.5vw);
+}
+
+span {
+    font-size: max(35px, 2vw);
+}
+
+.basic li {
+    color: #fff;
+    font-size: max(12px, 0.7vw);
+}
+
+.info-btn {
+    background-color: #58b7f7;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.info-btn:hover {
+    opacity: 0.8;
+}
+
+.info-btn:active {
+    opacity: 0.5;
+}
+
+.info-btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* >>>>>>>>END info.html<<<<<< */
+
+
+
+/* >>>>>>>>footer<<<<<< */
+footer {
+    background-color: #58b7f7;
+    margin-top: 20px;
+}
+
+footer .container-footer {
     display: flex;
     color: #fff;
     width: 50%;
     margin: auto;
     padding: 15px 0;
+
 }
-footer .container-footer ul{
+
+footer .container-footer ul {
     width: 25%;
     margin-right: 10px;
 }
-footer .container-footer h5{
+
+footer .container-footer h5 {
     margin-bottom: 16px;
     font-weight: 700;
     font-size: max(20px, 0.8vw)
 }
-footer .container-footer .redes-sociais img{
+
+footer .container-footer .redes-sociais img {
     margin-right: 10px;
 }
-footer .container-footer ul > p{
+
+footer .container-footer ul>p {
     margin-bottom: 40px;
     width: 80%;
 }
-footer .container-footer li{
+
+footer .container-footer li {
     margin: 10px 0;
 }
 
-footer .container-footer a{
+footer .container-footer a {
     color: #fff;
-    text-decoration: nome;
 }
+
+footer a {
+    text-decoration: none;
+}
+
 /* >>>>>>>>end footer<<<<<< */
 
 
 
 @media (max-width: 600px) {
-   
+
 
     .content {
         width: 80%;
@@ -270,25 +412,44 @@ footer .container-footer a{
     .info-modality,
     .info-certificate,
     .info-hours {
-        left: 0px;
+        left: 30px;
     }
-    @media (max-width: 1300px){
-        h1{
+
+    @media (max-width: 1300px) {
+        h1 {
             display: block;
         }
 
-        footer .container-footer{
+        footer .container-footer {
             flex-direction: column;
         }
-        footer .container-footer ul{
+
+        footer .container-footer ul {
             width: 100%;
             margin-bottom: 30px;
         }
 
-        footer .container-footer{
+        footer .container-footer {
             width: 80%;
         }
+
+        .box-info {
+            width: 80%;
+        }
+
+        .basic {
+            padding: 15px;
+            width: 100%;
+        }
+
+        section .prof-dry img {
+            top: 25px;
+        }
+        
+        section .prof-raq img{
+            top: 25px;
+        }
     }
-    
+
 
 }

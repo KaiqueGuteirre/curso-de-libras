@@ -18,13 +18,13 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-info">
         <header>
             <div class="navbar">
                 <nav class="links">
                     <a href="index.html">Início</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="login.html">Login</a>
+                    <a href="contato.html" class="a">Contato</a>
+                    <a href="log.html">Login</a>
                 </nav>
                 <div class="toggle-btn">
                     <i class="fa-solid fa-bars"></i>
@@ -34,14 +34,14 @@
             <div class="dropdown-menu">
                 <a href="index.html">Início</a>
                 <a href="contato.html">Contato</a>
-                <a href="login.html">Login</a>
+                <a href="log.html">Login</a>
             </div>
         </header>
 
         <div class="box-info">
             <section class="basic-course">
                 <div class="basic">
-                    <h2>Curso Básico</h2>
+                    <h2> <span>C</span>urso Básico</h2>
                     <p>Curso feito para os que gostam de aprender sozinho.
                         <li>Acesso aos vídeos</li>
                         <li>Mais de 190 horas de aula</li>
@@ -56,7 +56,7 @@
             </section>
             <section class="full-course">
                 <div class="basic">
-                    <h2>Curso Completo</h2>
+                    <h2> <span>C</span>urso Completo</h2>
                     <p>Acesso completo ao grupo excluviso, tire suas dúvidas com os professores nas aulas online
                         ao vivo e pelo whatsapp em poucos minutos.
                         <li>Acesso aos vídeos</li>
@@ -79,7 +79,7 @@
 
     </div>
 
-    <!-- <footer>
+    <footer>
         <div class="container-footer">
             <ul>
                 <h5>Libras Online</h5>
@@ -114,7 +114,7 @@
                 </li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
 
 
 
@@ -123,104 +123,5 @@
 
     <script src="app.js"></script>
 </body>
-<style>
-    container {
-        width: 100vw;
-        height: 100vh;
-        margin-bottom: 10px;
-    }
-
-    main {
-        height: 5vh;
-    }
-
-    .box-info {
-        position: relative;
-        margin: auto;
-        width: 50%;
-        top: 40px;
-        background-color: rgb(255, 255, 255, 0.2);
-        padding: 20px 50px;
-        border-radius: 15px;
-
-    }
-
-    .box-info h2 {
-        font-size: max(40px, 2.2vw);
-    }
-
-    .box-info p {
-        width: 50%;
-        font-size: max(22px, 1.3vw);
-        color: #fff;
-        margin-bottom: 20px;
-    }
-
-    .box-info li {
-        width: 50%;
-        font-size: max(15px, 1vw);
-        color: #fff;
-    }
-
-    .info-btn {
-        width: 180px;
-        height: 50px;
-        background-color: dodgerblue;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-
-    .info-btn a {
-        text-decoration: none;
-        padding: 20px;
-        font-size: 22px;
-        position: relative;
-        top: 10px;
-        left: 5px;
-        color: #fff;
-    }
-
-    .info-btn a:hover {
-        color: orange;
-    }
-
-    .info-btn:active {
-        opacity: 0.5;
-    }
-
-    footer {
-        background-color: #58b7f7;
-        height: 20%;
-        width: 100%;
-        overflow:  hidden;
-        margin-top: 30px;
-    }
-
-    footer .container-footer {
-        display: flex;
-        color: #fff;
-        width: 50%;
-        margin: auto;
-        padding: 15px 0;
-    }
-
-    @media (max-width: 1300px) {
-
-        .box-info {
-            width: 80%;
-            padding: 20px;
-        }
-
-        .box-info li {
-            width: 100%;
-        }
-
-        .box-info p {
-            width: 100%;
-        }
-
-
-    }
-</style>
 
 </html>
