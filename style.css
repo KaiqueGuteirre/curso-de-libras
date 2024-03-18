@@ -6,11 +6,11 @@
 }
 
 body {
-    background-image: url(./img/wall2.jpg);
+    background-image: url(./img/wall1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #864243;
+    background-color: #081d2e;
 }
 
 
@@ -67,7 +67,7 @@ header a {
 
 .content-text p {
     margin: auto;
-    font-size: max(15px, 1.3vw);
+    font-size: max(15px, 0.9vw);
     color: #fff;
     margin-top: 30px;
 }
@@ -87,6 +87,7 @@ h2 {
 
 .content-text h2 {
     font-size: max(25px, 2vw);
+    margin-bottom: 20px;
 }
 
 .content-box,
@@ -98,7 +99,7 @@ h2 {
     height: auto;
     background-color: rgb(255, 255, 255, 0.2);
     border-radius: 15px;
-    
+
 }
 
 
@@ -140,7 +141,7 @@ h2 {
 }
 
 .content-info .img-libras {
-    width:220px;
+    width: 220px;
     position: relative;
     margin-top: 10px;
     margin-bottom: 3px;
@@ -178,11 +179,11 @@ h2 {
 
 
 
-section .prof-dry {
+/* section .prof-dry {
     display: inline-block;
     width: 100%;
 
-}
+} */
 
 section .prof-dry p,
 .prof-raq p {
@@ -196,13 +197,15 @@ section .prof-dry p,
 section .prof-dry h4,
 .prof-raq h4 {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     padding: 20px 20px;
     margin-left: 20px;
-    font-size: 40px;
+    font-size: max(40px, 2vw);
     font-weight: 700;
     color: #fff;
     position: relative;
+    margin-top: 50px;
+
 
 }
 
@@ -215,13 +218,14 @@ section .prof-dry img {
     margin-left: 20px;
 }
 
-section .prof-raq img{
+section .prof-raq img {
     width: 20%;
     min-width: 120px;
     position: relative;
     top: 30px;
     margin-left: 20px;
 }
+
 .dropdown-menu {
     position: absolute;
     right: 2rem;
@@ -257,6 +261,33 @@ section .prof-raq img{
     color: #fff;
     -webkit-text-stroke: 1px black;
 }
+
+/* >>>>>>>>>>>>>Requirements<<<<<<<< */
+.content-Requirements {
+    margin: 80px 0;
+}
+
+.Requirements li {
+    font-size: max(15px, 0.9vw);
+    color: #fff;
+}
+
+/* >>>>>>>>>>>>> END Requirements<<<<<<<< */
+
+/* >>>>>>>>>>>>>Para quem<<<<<<<< */
+
+.content-for-whom {
+    margin: 80px 0;
+}
+
+.for-whom li {
+    font-size: max(15px, 0.9vw);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* >>>>>>>>>>>>> END para que,<<<<<<<< */
+
 
 /* >>>>>>>>info.html<<<<<< */
 .container-info {
@@ -383,7 +414,7 @@ footer a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
 
     .content {
@@ -419,7 +450,6 @@ footer a {
         h1 {
             display: block;
         }
-
         footer .container-footer {
             flex-direction: column;
         }
@@ -443,12 +473,25 @@ footer a {
         }
 
         section .prof-dry img {
-            top: 25px;
+            top: 0;
         }
-        
-        section .prof-raq img{
-            top: 25px;
+
+        section .prof-raq img {
+            top: 0;
         }
+
+        section .prof-dry p,
+        .prof-raq p {
+            width: 80%;
+
+        }
+
+        section .prof-dry h4,
+        .prof-raq h4 {
+            margin-top: 0;
+
+        }
+
     }
 
 
